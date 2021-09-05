@@ -1,0 +1,209 @@
+__type: "tm_creation_graph"
+__uuid: "69d13df3-c0c0-6b45-47a5-ecc406bbbdad"
+graph: {
+	__uuid: "d85fb8b6-9659-b363-3476-0870f0f2861d"
+	nodes: [
+		{
+			__uuid: "0905f455-5d38-1e11-8ccc-f33f31a7e72f"
+			type: "shader_saturate"
+			position_x: 230.1556091308594
+			position_y: -79.73690795898438
+		}
+		{
+			__uuid: "caaee664-700d-16e8-95f0-0b9171fb9cea"
+			type: "shader_sub"
+			position_x: -506.5390930175781
+			position_y: -361.2077026367188
+		}
+		{
+			__uuid: "d381f327-6492-2e45-cc9a-3fb2e297d380"
+			type: "shader_div"
+			position_x: -315.6555480957031
+			position_y: -203.7671966552734
+		}
+		{
+			__uuid: "5fa8dbe1-a70e-a813-68b0-8a71e20bed30"
+			type: "shader_constant"
+			position_x: -495.455810546875
+			position_y: 37.0495719909668
+		}
+		{
+			__uuid: "490694d8-c9d7-1fa3-f32c-3557395d1184"
+			type: "shader_mad"
+			position_x: 22.75468444824219
+			position_y: -57.4478759765625
+		}
+		{
+			__uuid: "583629c5-706f-6925-5aa7-8de0399c50ce"
+			type: "shader_constant"
+			position_x: -183.8443908691406
+			position_y: -9.676303863525391
+		}
+		{
+			__uuid: "f46d48a7-4d83-8afb-48b1-7040c89587b0"
+			type: "shader_lerp"
+			position_x: 466.8712158203125
+			position_y: -224.625
+		}
+		{
+			__uuid: "c3aee929-994a-e130-8a9e-634f7daf010b"
+			type: "shader_inv"
+			position_x: 574.4586181640625
+			position_y: -85.09115600585938
+		}
+		{
+			__uuid: "7e6050b9-f274-e367-4286-7b660fb2b52b"
+			type: "shader_mul"
+			position_x: 635.0226440429688
+			position_y: 84.38893890380859
+		}
+		{
+			__uuid: "d57c4426-a269-ed78-82c5-5128beecfc81"
+			type: "shader_mul"
+			position_x: 844.7103881835938
+			position_y: 140.0789337158203
+		}
+		{
+			__uuid: "e67b1129-5c02-e2cc-4888-1c0e23e6cb6f"
+			type: "shader_sub"
+			position_x: 1002.379333496094
+			position_y: -159.31494140625
+		}
+	]
+	connections: [
+		{
+			__uuid: "ba2bc6ba-790e-17fc-f83c-f8a84a2a921c"
+			from_node: "caaee664-700d-16e8-95f0-0b9171fb9cea"
+			to_node: "d381f327-6492-2e45-cc9a-3fb2e297d380"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "071717d2d36b6b11"
+		}
+		{
+			__uuid: "c092b405-b649-21e4-a363-f4a94f35a6a5"
+			from_node: "5fa8dbe1-a70e-a813-68b0-8a71e20bed30"
+			to_node: "d381f327-6492-2e45-cc9a-3fb2e297d380"
+			from_connector_hash: "920b430f38928dc9"
+			to_connector_hash: "ea8bfc7d922a2a37"
+		}
+		{
+			__uuid: "83c56856-4ff7-80da-63cc-ece7847a28ca"
+			from_node: "d381f327-6492-2e45-cc9a-3fb2e297d380"
+			to_node: "490694d8-c9d7-1fa3-f32c-3557395d1184"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "071717d2d36b6b11"
+		}
+		{
+			__uuid: "de388393-edd3-fbe0-58fc-2dfff9677b7d"
+			from_node: "583629c5-706f-6925-5aa7-8de0399c50ce"
+			to_node: "490694d8-c9d7-1fa3-f32c-3557395d1184"
+			from_connector_hash: "920b430f38928dc9"
+			to_connector_hash: "ea8bfc7d922a2a37"
+		}
+		{
+			__uuid: "45510247-3a80-027e-5ca1-31d51e490d9e"
+			from_node: "583629c5-706f-6925-5aa7-8de0399c50ce"
+			to_node: "490694d8-c9d7-1fa3-f32c-3557395d1184"
+			from_connector_hash: "920b430f38928dc9"
+			to_connector_hash: "d8788d18ba82e0b5"
+		}
+		{
+			__uuid: "f5d9e163-2c03-ab3f-4fdc-e235e430927c"
+			from_node: "490694d8-c9d7-1fa3-f32c-3557395d1184"
+			to_node: "0905f455-5d38-1e11-8ccc-f33f31a7e72f"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "920b430f38928dc9"
+		}
+		{
+			__uuid: "a6bf8f27-4b6b-6326-9997-3e0b1971b983"
+			from_node: "0905f455-5d38-1e11-8ccc-f33f31a7e72f"
+			to_node: "f46d48a7-4d83-8afb-48b1-7040c89587b0"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "a9f7b29f271e2bf0"
+		}
+		{
+			__uuid: "517d17a8-2254-4337-2858-e3cd5e3cc764"
+			from_node: "0905f455-5d38-1e11-8ccc-f33f31a7e72f"
+			to_node: "c3aee929-994a-e130-8a9e-634f7daf010b"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "071717d2d36b6b11"
+		}
+		{
+			__uuid: "5c43bc30-d223-e80a-e573-92447def6196"
+			from_node: "c3aee929-994a-e130-8a9e-634f7daf010b"
+			to_node: "7e6050b9-f274-e367-4286-7b660fb2b52b"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "071717d2d36b6b11"
+		}
+		{
+			__uuid: "157ecbc9-0219-083c-ace1-200b48f35fcd"
+			from_node: "0905f455-5d38-1e11-8ccc-f33f31a7e72f"
+			to_node: "7e6050b9-f274-e367-4286-7b660fb2b52b"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "ea8bfc7d922a2a37"
+		}
+		{
+			__uuid: "4d1a0aaa-9230-57f7-1f4e-7ea86da46667"
+			from_node: "7e6050b9-f274-e367-4286-7b660fb2b52b"
+			to_node: "d57c4426-a269-ed78-82c5-5128beecfc81"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "071717d2d36b6b11"
+		}
+		{
+			__uuid: "5cbb7175-79f0-05a0-b19c-8f37686b4798"
+			from_node: "5fa8dbe1-a70e-a813-68b0-8a71e20bed30"
+			to_node: "d57c4426-a269-ed78-82c5-5128beecfc81"
+			from_connector_hash: "920b430f38928dc9"
+			to_connector_hash: "ea8bfc7d922a2a37"
+		}
+		{
+			__uuid: "f94889c2-4bca-bfb8-2602-ac4f2497d99a"
+			from_node: "f46d48a7-4d83-8afb-48b1-7040c89587b0"
+			to_node: "e67b1129-5c02-e2cc-4888-1c0e23e6cb6f"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "071717d2d36b6b11"
+		}
+		{
+			__uuid: "a11944d4-36e3-7013-dcd0-42e44a6af992"
+			from_node: "d57c4426-a269-ed78-82c5-5128beecfc81"
+			to_node: "e67b1129-5c02-e2cc-4888-1c0e23e6cb6f"
+			from_connector_hash: "1609e8f8d8051ecb"
+			to_connector_hash: "ea8bfc7d922a2a37"
+		}
+	]
+	data: [
+		{
+			__uuid: "9f146b65-8044-e615-4a1f-f791377b246d"
+			to_node: "5fa8dbe1-a70e-a813-68b0-8a71e20bed30"
+			to_connector_hash: "6bb47b51ae4a21ff"
+			data: {
+				__type: "tm_shader_system_constant_node_settings"
+				__uuid: "64b14cb4-672b-b7bc-adc2-3f88e5badae6"
+				value_type_hash: "6d0a4e744c45523b"
+				value: {
+					__type: "tm_float"
+					__uuid: "ca85b578-83a3-0cc3-0a44-d6f8b5fe78ff"
+					float: 0.1000000014901161
+				}
+			}
+		}
+		{
+			__uuid: "e791dd69-2dbc-6ffd-1b9e-2b81e5b28c53"
+			to_node: "583629c5-706f-6925-5aa7-8de0399c50ce"
+			to_connector_hash: "6bb47b51ae4a21ff"
+			data: {
+				__type: "tm_shader_system_constant_node_settings"
+				__uuid: "38e583d5-4185-c5fa-254f-a67c961cbfda"
+				value_type_hash: "6d0a4e744c45523b"
+				value: {
+					__type: "tm_float"
+					__uuid: "a44d5a85-bb47-e60e-1bb5-7c8c2be5c8c8"
+					float: 0.5
+				}
+			}
+		}
+	]
+	interface: {
+		__uuid: "07949724-fec2-228e-8058-94ea83e5e27e"
+	}
+}
+__asset_uuid: "e57f7adf-a331-5557-046d-11ff5c5a3ef9"

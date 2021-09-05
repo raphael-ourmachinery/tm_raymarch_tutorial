@@ -1,2 +1,2 @@
-# tm_raymarch_tutorial
-Repository with source code used in The Machinery creation graph raymarch tutorial
+# themachinery_raymarching
+Simple raymarching component for The Machinery
